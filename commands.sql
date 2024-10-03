@@ -14,7 +14,7 @@ FIELD_DELIMITER = ','
 NULL_IF = ('NULL', 'null', '')
 EMPTY_FIELD_AS_NULL = TRUE;
 
-PUT file:///workspaces/Project-YC/companies.csv @MY_STAGE;
+PUT file:///workspaces/Project-YC/companies.csv @MY_STAGE AUTO_COMPRESS=FALSE;
 
 CREATE OR REPLACE TABLE COMPANIES (
     NAME VARCHAR,
